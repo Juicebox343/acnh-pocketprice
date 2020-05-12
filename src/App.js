@@ -49,9 +49,9 @@ class App extends React.Component{
     }
 
      return(
-      <div>
+      <div className='container'>
         <Header/>
-        <SearchForm searchBar={this.searchBar} selectedCreature={this.selectedCreature}/>
+        <SearchForm searchBar={this.searchBar} selectedCreature={this.selectedCreature} creatureList={this.state.selectedCreatures}/>
         <ul className='creature-list'>       
         <h2>{this.state.selectedCreatures[0].toUpperCase() +  
             this.state.selectedCreatures.slice(1)}</h2>  

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "625cc191c52560c8ae10c3b4ba2b6234",
+    "revision": "122a5067c93efd948b3797b02a594b21",
     "url": "/index.html"
   },
   {
-    "revision": "a8fe8734e8741a55f785",
-    "url": "/static/css/main.2eba3988.chunk.css"
+    "revision": "6aa6e69ce6833e999564",
+    "url": "/static/css/main.c98a7ba5.chunk.css"
   },
   {
     "revision": "154f5d14d5bbcf8a9f79",
@@ -16,15 +16,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.90f1017d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a8fe8734e8741a55f785",
-    "url": "/static/js/main.b7f9a9f8.chunk.js"
+    "revision": "6aa6e69ce6833e999564",
+    "url": "/static/js/main.64c3599f.chunk.js"
   },
   {
     "revision": "5623c6fabbfa77983188",
     "url": "/static/js/runtime-main.fc03a1b1.js"
-  },
-  {
-    "revision": "20898ec57f0ac6ecc069787f9dbebc85",
-    "url": "/static/media/animalcrossing.20898ec5.png"
   }
 ]);

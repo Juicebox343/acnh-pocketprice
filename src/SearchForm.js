@@ -1,5 +1,4 @@
 import React from 'react';
-import FilterBtns from './FilterBtns';
 // import Pocket from './Pocket';
 
 class SearchForm extends React.Component{
@@ -16,6 +15,12 @@ class SearchForm extends React.Component{
             this.setState({filter: false})
         }
     }
+    
+    handleClick = (e) =>{
+        this.props.selectedCreature(e.target.value);
+        
+    }
+
 
     // pocketToggle = () =>{
     //     if (!this.state.pocket){
@@ -28,19 +33,10 @@ class SearchForm extends React.Component{
     render(){
         return(
             <div className='searchForm' ref={this.searchRef}>      
-                <div className='main-search'>
-                    <input name='search' type='text' placeholder='Search..' onChange={(e)=>this.props.searchBar(e)} />
-                    <button onClick={this.filterToggle}>Filters</button>
-                    {/* <button onClick={this.pocketToggle}>Pocket</button> */}
-                </div>
-                {/* {this.state.pocket && <Pocket loadedCreatures={this.props.loadedCreatures} pocket={this.props.pocket}/> } */}
-                {this.state.filter && <FilterBtns selectedCreature={this.props.selectedCreature} filtertoggle={this.filterToggle}/> }
-                
-                
-                
-                
-                
-            </div> 
+                <input name='search' type='text' placeholder='Search..' onChange={(e)=>this.props.searchBar(e)} />
+                <button value='bugs' onClick={this.handleClick}>Bugs</button>
+                <button value='fishes' onClick={this.handleClick}>Fishes</button>
+            </div>
         )
     }
 }
@@ -74,3 +70,9 @@ export default SearchForm;
 //     } else {
 //         filterWrapper.classList.add('hide-me');
 //     }
+
+
+   /* {this.state.pocket && <Pocket loadedCreatures={this.props.loadedCreatures} pocket={this.props.pocket}/> } */
+
+      /* <button onClick={this.pocketToggle}>Pocket</button> */
+      /* <button onClick={this.filterToggle}>Filters</button> */

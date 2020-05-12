@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Arial Rounded';
+    src: url('/arial-rounded.otf');
+}
+
+@font-face {
+    font-family: 'Arial Rounded Bold';
+    src: url('/arial-rounded-mt-bold-grassetto.otf');
+}
+
+
+h1, h2, h3, p, button, li, span, input{
+    letter-spacing: 1px;
+    color: #6d4b25;
+    font-family: 'Arial Rounded Bold';
+
+}
+
 header{
     background-image: url('./animalcrossing.png');
     background-repeat: no-repeat;
@@ -5,6 +23,11 @@ header{
     background-position: center;
     width: 100%;
     height: 128px;
+    
+}
+
+.container{
+    padding: .2rem;
 }
 
 h2{
@@ -20,17 +43,37 @@ ul{
 
 .creature-data{
     list-style: none;
-    padding: 0.5rem;
     margin: 0.5rem 0;
     background-color: #f1e7cc;
-    border-radius: 7px;
     box-shadow: 2px 3px 0 #ebdfbf;
     color: #3f3f3f;
-    border: 5px solid transparent;
+    border-radius: 7px;
+    padding: .5rem;
+    transition: margin .2s;
+}
+
+.creature-details{
+    background-color: #f3eed8;
+    padding: .3rem;
+    border-radius: 7px;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 0;
+    transition: .1s;
+    font-size: 0.75rem;
+}
+
+.creature-details p{
+    margin: 0.2rem;
 }
 
 .creature-data:hover{
-    border: 5px solid #f8a9af;
+    box-shadow : 0px 0px 2px 4px #f8a9af;
+    transition: all .1s;
+}
+
+.creature-data:focus{
+    border: 4px solid #f8a9af;                          
 }
 
 h3{
@@ -42,10 +85,16 @@ h3{
 
 .headline-data{
     display: grid;
+    background-color: transparent;
+    border: none;
+    padding: .2rem;
     grid-template-columns: 50%;
     grid-template-areas:
         'name cost';
     align-items: center;
+    width: 100%;
+    line-height: 200%;
+    text-align: left;
 }
 
 .location{
@@ -73,20 +122,11 @@ h3{
     justify-self: end;
 }
 
-
-.main-search {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-
 .searchForm{
+    display: flex;
+    justify-content: space-between;
     transition: margin .1s;
     transition-timing-function: ease-out;
-}
-
-.filter-open{
-    margin-bottom: 150px;
 }
 
 .searchForm input{
@@ -97,8 +137,10 @@ h3{
     background-color: #f3eed8;
     color: #3f3f3f;
     margin-bottom: .5rem;
-    width: 60%;
+    margin-right: .2rem;
     height: 50px;
+    min-width: 30%;
+    flex-grow: 2;
 }
 
 .searchForm button{
@@ -106,35 +148,46 @@ h3{
     border-radius: 5px;
     border: none;
     background-color: #f3eed8;
-    box-shadow: 2px 3px 0 #ebdfbf;
+ 
     height: 50px;
-    margin: 0;
-    justify-self: flex-end;
+    width: 75px;
+    flex-grow: 1;
+    margin: 0 .2rem;
+    border: solid 3px #f1e7cc;
 }
 
+.searchForm button:focus{
+    box-shadow : 0px 0px 0px 4px #f8a9af;
+}
 
-.filter-buttons{
-    transition: all 0.1s;
-    transition-timing-function: ease-in-out;
-    visibility: visible;
-    width: 100%;
+.searchForm button:hover{
+    box-shadow : 0px 0px 2px 4px #f8a9af;
+    transition: all .1s;
+    
+}
+
+.clicked-me{
+    background-color: #2d94da;
+    color: white;
+    box-shadow: 2px 3px 0 #2e59a5;
+}
+
+.stretch-me{
+    margin-bottom: 30px;
 }
 
 .hide-me{
+    display: none;
     opacity: 0;
-    visibility: hidden;
 }
 
 
-.filter-buttons button{
-    width: 100%;
-    margin: 0;
-    margin-bottom: .5rem;
-}
 
 body{
     background-color: #97d8d8;
-    font-family: sans-serif;
+
+    max-width: 550px;
+    margin: auto;
 }
 
 *{

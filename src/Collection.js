@@ -1,11 +1,18 @@
 import React from 'react';
-
+import {monthCalc} from './helperFunctions';
 
 class Collection extends React.Component{
  
-    handleClick = (key) =>{
 
+    creatureDetails = React.createRef();
+
+    handleClick = (key) =>{
       this.props.addToPocket(this.props.index)
+    }
+
+    expandCreatures = () =>{
+      const creatureDetailBtn = this.creatureDetails.current;
+      creatureDetailBtn.classList.toggle('hide-me')
     }
 
     
@@ -13,14 +20,25 @@ class Collection extends React.Component{
     render(){
       // const index = this.props.details.index;
       const creatureName = this.props.details.name['name-en'];
-      const price = this.props.details.price;    
+      const price = this.props.details.price;  
+      const location = this.props.details.availability['location'];
+      const rarity = this.props.details.availability['rarity'];
+      const monthNorth = this.props.details.availability['month-northern'];
+      const monthSouth = this.props.details.availability['month-southern'];
+      const time = this.props.details.availability['time'];
       
       return(
         <li className='creature-data'>
-          <div className='headline-data'>
-            <h3>{creatureName}</h3> <span className='cost'>{price} Bells</span> 
+          <button className='headline-data' onClick={this.expandCreatures} >
+            <h3>{creatureName}</h3> <span className='cost'>{price} Bells</span>            
+          </button>
+          <div className='creature-details hide-me' ref={this.creatureDetails}>
+              <p>Location: {location}</p>
+              <p>Time: {time}</p>
+              <p>Northern Hemisphere: {monthCalc(monthNorth)}</p>
+              <p>Southern Hemisphere: {monthCalc(monthSouth)}</p>
+              <p>Rarity: {rarity}</p>
           </div>
-
         </li>
       )
   }
