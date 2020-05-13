@@ -1,14 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Arial Rounded Bold';
     src: url('/arial-rounded-mt-bold-grassetto.otf');
 }
 
-
 h1, h2, h3, p, button, li, span, input{
     letter-spacing: 1px;
     color: #6d4b25;
     font-family: 'Arial Rounded Bold', Arial, Helvetica, sans-serif;
+}
 
+body{
+    background-color: #97d8d8;
+    max-width: 550px;
+    margin: auto;
 }
 
 header{
@@ -76,7 +84,6 @@ h3{
     display: inline-block;
     padding: 0;
     margin: 0;
-    grid-area: 'name';
 }
 
 .headline-data{
@@ -87,18 +94,7 @@ h3{
     border: none;
     width: 100%;
     line-height: 45px;
-    font-size: 1.4rem;
-}
-
-
-.location{
-    grid-area: 'place';
-    text-align: center;
-}
-
-.cost{
-    grid-area: 'cost';
-    text-align: right;
+    font-size: 1.2rem;
 }
 
 .add-to-pocket{
@@ -156,18 +152,7 @@ h3{
 
 .searchForm button:hover{
     box-shadow : 0px 0px 2px 4px #f8a9af;
-    transition: all .1s;
-    
-}
-
-.clicked-me{
-    background-color: #2d94da;
-    color: white;
-    box-shadow: 2px 3px 0 #2e59a5;
-}
-
-.stretch-me{
-    margin-bottom: 30px;
+    transition: all .1s; 
 }
 
 .hide-me{
@@ -177,15 +162,6 @@ h3{
 
 
 
-body{
-    background-color: #97d8d8;
-    max-width: 550px;
-    margin: auto;
-}
-
-*{
-    box-sizing: border-box;
-}
 
 .my-pocket{
     background-color: #f1f1f1;
@@ -205,7 +181,7 @@ body{
 }
 
 .kofi{
-    position: fixed;
+    position: absolute;
     top: 7px;
     right: 10px;
     width: 50px;
