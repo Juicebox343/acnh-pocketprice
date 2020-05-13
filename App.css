@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Arial Rounded Bold';
+    src: url('/arial-rounded-mt-bold-grassetto.otf');
+}
+
+
+h1, h2, h3, p, button, li, span, input{
+    letter-spacing: 1px;
+    color: #6d4b25;
+    font-family: 'Arial Rounded Bold', Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    background-image: url('./animalcrossing.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 128px;
+    
+}
+
+.container{
+    padding: .2rem;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    margin: auto;
+    background-color: #f3eed8;
+    padding: 0.2rem 0.7rem;
+    border-radius: 7px;
+}
+
+.creature-data{
+    list-style: none;
+    margin: 0.5rem 0;
+    background-color: #f1e7cc;
+    box-shadow: 2px 3px 0 #ebdfbf;
+    color: #3f3f3f;
+    border-radius: 7px;
+    padding: .5rem;
+    transition: margin .2s;
+}
+
+.creature-details{
+    background-color: #f3eed8;
+    padding: .3rem;
+    border-radius: 7px;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 0;
+    transition: .1s;
+    font-size: 1rem;
+}
+
+.creature-details p{
+    margin: 0.2rem;
+}
+
+.creature-data:hover{
+    box-shadow : 0px 0px 2px 4px #f8a9af;
+    transition: all .1s;
+}
+
+.creature-data:focus creature-details{
+    box-shadow : 0px 0px 2px 4px #f8a9af;
+    transition: all .1s;                          
+}
+
+h3{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    grid-area: 'name';
+}
+
+.headline-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    line-height: 45px;
+    font-size: 1.4rem;
+}
+
+
+.location{
+    grid-area: 'place';
+    text-align: center;
+}
+
+.cost{
+    grid-area: 'cost';
+    text-align: right;
+}
+
+.add-to-pocket{
+    grid-area: 'pocketBtn';
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 7px;
+    background-color: #efe05f;
+    border: none;
+    box-shadow: 2px 1px 0 #d6c68b;
+    color: #715b43;
+    font-weight: 900;
+    font-size: 1.5rem;
+    justify-self: end;
+}
+
+.searchForm{
+    display: flex;
+    justify-content: space-between;
+    transition: margin .1s;
+    transition-timing-function: ease-out;
+}
+
+.searchForm input{
+    font-size: 1.5rem;
+    padding: 0.45rem;
+    border-radius: 5px;
+    border: solid 3px #f1e7cc;
+    background-color: #f3eed8;
+    color: #3f3f3f;
+    margin-bottom: .5rem;
+    margin-right: .2rem;
+    height: 50px;
+    min-width: 30%;
+    flex-grow: 2;
+}
+
+.searchForm button{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f3eed8;
+ 
+    height: 50px;
+    width: 75px;
+    flex-grow: 1;
+    margin: 0 .2rem;
+    border: solid 3px #f1e7cc;
+}
+
+.searchForm button:focus{
+    box-shadow : 0px 0px 0px 4px #f8a9af;
+}
+
+.searchForm button:hover{
+    box-shadow : 0px 0px 2px 4px #f8a9af;
+    transition: all .1s;
+    
+}
+
+.clicked-me{
+    background-color: #2d94da;
+    color: white;
+    box-shadow: 2px 3px 0 #2e59a5;
+}
+
+.stretch-me{
+    margin-bottom: 30px;
+}
+
+.hide-me{
+    display: none;
+    opacity: 0;
+}
+
+
+
+body{
+    background-color: #97d8d8;
+    max-width: 550px;
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.my-pocket{
+    background-color: #f1f1f1;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pocket-slot{
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    height: 20px;
+    width: 20px;
+    margin: .5rem;
+}
+
+.kofi{
+    position: fixed;
+    top: 7px;
+    right: 10px;
+    width: 50px;
+    padding: .3rem .3rem;
+    background-color: #2d94da;
+    border: none;
+    border-radius: 7px;
+}
+
+.kofi:focus{
+    box-shadow : 0px 0px 2px 4px #f8a9af;
+    transition: all .1s;
+}
+
+.kofi img{
+    width: 100%;
+
+}
