@@ -34,7 +34,7 @@ class Collection extends React.Component{
           </button>
           <div className='creature-details hide-me' ref={this.creatureDetails}>
               <p>Location: {location}</p>
-              <p>Time: {time}</p>
+              <p>Time: {time === '' ? 'All Day' : time}</p>
               <p>Northern Hemisphere: {monthCalc(monthNorth)}</p>
               <p>Southern Hemisphere: {monthCalc(monthSouth)}</p>
               <p>Rarity: {rarity}</p>
