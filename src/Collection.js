@@ -18,7 +18,6 @@ class Collection extends React.Component{
     
   
     render(){
-      // const index = this.props.details.index;
       const creatureName = this.props.details.name['name-en'];
       const price = this.props.details.price;  
       const location = this.props.details.availability['location'];
@@ -35,8 +34,8 @@ class Collection extends React.Component{
           <div className='creature-details hide-me' ref={this.creatureDetails}>
               <p>Location: {location}</p>
               <p>Time: {time === '' ? 'All Day' : time}</p>
-              <p>Northern Hemisphere: {monthCalc(monthNorth)}</p>
-              <p>Southern Hemisphere: {monthCalc(monthSouth)}</p>
+              <p>N. Hemisphere: {monthCalc(monthNorth)}</p>
+              <p>S. Hemisphere: {monthCalc(monthSouth)}</p>
               <p>Rarity: {rarity}</p>
           </div>
         </li>
@@ -44,5 +43,3 @@ class Collection extends React.Component{
   }
 }
   export default Collection;
-  
-/* <button className='add-to-pocket' value={index} onClick={this.handleClick}>+</button>  */

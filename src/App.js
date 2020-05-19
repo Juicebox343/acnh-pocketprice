@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
-import Collection from './Collection'
-import SearchForm from './SearchForm'
+import Collection from './Collection';
+import MiscCollection from './MiscCollection';
+import SearchForm from './SearchForm';
 import bugsData from './bugs.json';
 import fishesData from './fishes.json';
+import miscData from './misc.json';
 import Header from './Header';
 
 
 class App extends React.Component{
   state = {
     pocket: {},
-    selectedCreatures: 'fishes',
+    selectedCollection: 'all',
     search: ''
   }
 
@@ -18,15 +20,9 @@ class App extends React.Component{
     let keyword = event.target.value;
     this.setState({search:keyword})
   }
-
-  // addToPocket = (key) =>{
-  //   const pocket = {...this.state.pocket};
-  //   pocket[key] = pocket[key] + 1 | 1;
-  //   this.setState({pocket: pocket})
-  // }
   
-  selectedCreature = (e) => {
-    this.setState({selectedCreatures: e})
+  selectedCollection = (e) => {
+    this.setState({selectedCollection: e})
   }
 
   render(){ 
@@ -40,29 +36,106 @@ class App extends React.Component{
     })
     .filter(bugs => bugs['name']['name-en'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1)
 
-    const searchMe = () =>{
-      if(this.state.selectedCreatures === 'fishes'){
-        return mappedFish;
-      } else if (this.state.selectedCreatures === 'bugs'){
-        return mappedBugs;
-      }
-    }
+    const mappedMisc = Object.keys(miscData).map(key => {
+      return miscData[key]
+    })
+    .filter(item => item.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1)
+
 
      return(
       <div className='container'>
         <Header/>
-        <SearchForm searchBar={this.searchBar} selectedCreature={this.selectedCreature} creatureList={this.state.selectedCreatures}/>
+        <SearchForm searchBar={this.searchBar} selectedCollection={this.selectedCollection} creatureList={this.state.selectedCollection}/>
         <ul className='creature-list'>       
-        <h2>{this.state.selectedCreatures[0].toUpperCase() +  
-            this.state.selectedCreatures.slice(1)}</h2>  
-         {Object.keys(searchMe()).map(key => 
-              <Collection 
-                  key={key} 
-                  index={key}
-                  details={searchMe()[key]} 
-                  // addToOrder={this.addToPocket}
-              />
-            )}
+          {this.state.selectedCollection === 'all' &&
+            <div>
+            <ul>
+              <h2>Fishes</h2>
+
+              {
+              mappedFish.length > 0 
+              ? Object.keys(mappedFish).map(key => 
+                  <Collection 
+                      key={key} 
+                      index={key}
+                      details={mappedFish[key]} 
+                  />
+                )
+              : <span>Nothing here!</span>
+              }
+            </ul>
+
+            <ul>
+              <h2>Bugs</h2>  
+              {
+              mappedBugs.length > 0 
+              ? Object.keys(mappedBugs).map(key => 
+                  <Collection 
+                      key={key} 
+                      index={key}
+                      details={mappedBugs[key]} 
+                  />
+                )
+              : <span>Nothing here!</span>
+              }
+            </ul>
+  
+            <ul>
+              <h2>Misc Items</h2>  
+              {
+              mappedMisc.length > 0 
+              ? Object.keys(mappedMisc).map(key => 
+                  <MiscCollection 
+                      key={key} 
+                      index={key}
+                      details={mappedMisc[key]} 
+                  />
+                )
+              : <span>Nothing here!</span>
+              }
+            </ul>
+            </div>
+          }
+
+          {this.state.selectedCollection === 'fishes' &&
+          <ul>
+            <h2>Fishes</h2>  
+            {Object.keys(mappedFish).map(key => 
+                <Collection 
+                    key={key} 
+                    index={key}
+                    details={mappedFish[key]} 
+                />
+              )}
+          </ul>
+          }
+         
+          {this.state.selectedCollection === 'bugs' &&
+          <ul>
+            <h2>Bugs</h2>  
+            {Object.keys(mappedBugs).map(key => 
+                <Collection 
+                    key={key} 
+                    index={key}
+                    details={mappedBugs[key]} 
+                />
+              )}
+          </ul>
+          }
+        
+          {this.state.selectedCollection === 'misc' &&
+          <ul>
+            <h2>Misc Items</h2>  
+            {Object.keys(mappedMisc).map(key => 
+                <MiscCollection 
+                    key={key} 
+                    index={key}
+                    details={mappedMisc[key]} 
+                />
+              )}
+          </ul>
+          }
+          
         </ul>
       </div>
       
