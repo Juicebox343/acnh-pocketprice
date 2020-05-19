@@ -1,0 +1,83 @@
+{
+    "1": {
+      "name": "Giant Clam",
+      "price": 900
+    },
+    "2": {
+        "name": "Conch",
+        "price": 700
+      },
+    "3": {
+      "name": "Coral",
+      "price": 500
+    },
+    "4": {
+        "name": "Venus Comb",
+        "price": 300
+      },
+    "5": {
+      "name": "Sea Snail",
+      "price": 180
+    },
+    "6": {
+        "name": "Manila Clam",
+        "price": 100
+      },
+    "7": {
+      "name": "Cowrie",
+      "price": 60
+    },
+    "8": {
+        "name": "Wood",
+        "price": 60
+      },
+    "9": {
+      "name": "Stone",
+      "price": 75
+    },
+    "10": {
+        "name": "Clay",
+        "price": 100
+      },
+    "11": {
+      "name": "Iron Nugget",
+      "price": 375
+    },
+    "12": {
+      "name": "Gold Nugget",
+      "price": 10000
+    },
+    "13": {
+        "name": "Fish Bait",
+        "price": 200
+      },
+    "14": {
+      "name": "Ordinary Flowers",
+      "price": 40
+    },
+    "15": {
+        "name": "Hybrid Flowers",
+        "price": 80
+      },
+    "16": {
+      "name": "Fruit Trees",
+      "price": 300
+    },
+    "17": {
+        "name": "Coconut Trees",
+        "price": 500
+      },
+    "18": {
+      "name": "Coconuts",
+      "price": 250
+    },
+    "19": {
+      "name": "Home Island Fruit",
+      "price": 100
+    },
+    "20": {
+      "name": "Away Island Fruit",
+      "price": 500
+    }
+}
+  
