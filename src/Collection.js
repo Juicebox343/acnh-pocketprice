@@ -18,13 +18,14 @@ class Collection extends React.Component{
     
   
     render(){
-      const creatureName = this.props.details.name['name-en'];
+      
+      const creatureName = (typeof this.props.details.name['name-USen'] !== 'undefined') ? this.props.details.name['name-USen'] : this.props.details.name;
       const price = this.props.details.price;  
-      const location = this.props.details.availability['location'];
-      const rarity = this.props.details.availability['rarity'];
-      const monthNorth = this.props.details.availability['month-northern'];
-      const monthSouth = this.props.details.availability['month-southern'];
-      const time = this.props.details.availability['time'];
+      const location = this.props.details.availability['location'] || '';
+      const rarity = this.props.details.availability['rarity'] || '';
+      const monthNorth = this.props.details.availability['month-northern'] || '';
+      const monthSouth = this.props.details.availability['month-southern'] || '';
+      const time = this.props.details.availability['time'] || '';
       
       return(
         <li className='creature-data'>

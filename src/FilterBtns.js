@@ -13,6 +13,7 @@ class FilterBtns extends React.Component{
         <div className='filter-buttons' ref={this.filterRef}>
             <button value='bugs' onClick={this.handleClick}>Bugs</button>
             <button value='fishes' onClick={this.handleClick}>Fishes</button>
+            <button value='sea' onClick={this.handleClick}>Sea Creatures</button>
             <button value='misc' onClick={this.handleClick}>Misc</button>
             <button value='all' onClick={this.handleClick}>Show all</button>
         </div>

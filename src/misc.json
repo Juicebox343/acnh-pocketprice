@@ -1,83 +1,87 @@
 {
     "1": {
-      "name": "Giant Clam",
+      "name-USen": "Giant Clam",
       "price": 900
     },
     "2": {
-        "name": "Conch",
+        "name-USen": "Conch",
         "price": 700
       },
     "3": {
-      "name": "Coral",
+      "name-USen": "Coral",
       "price": 500
     },
     "4": {
-        "name": "Venus Comb",
+        "name-USen": "Venus Comb",
         "price": 300
       },
     "5": {
-      "name": "Sea Snail",
+      "name-USen": "Sea Snail",
       "price": 180
     },
     "6": {
-        "name": "Manila Clam",
+        "name-USen": "Manila Clam",
         "price": 100
       },
     "7": {
-      "name": "Cowrie",
+      "name-USen": "Cowrie",
       "price": 60
     },
     "8": {
-        "name": "Wood",
+        "name-USen": "Wood",
         "price": 60
       },
     "9": {
-      "name": "Stone",
+      "name-USen": "Stone",
       "price": 75
     },
     "10": {
-        "name": "Clay",
+        "name-USen": "Clay",
         "price": 100
       },
     "11": {
-      "name": "Iron Nugget",
+      "name-USen": "Iron Nugget",
       "price": 375
     },
     "12": {
-      "name": "Gold Nugget",
+      "name-USen": "Gold Nugget",
       "price": 10000
     },
     "13": {
-        "name": "Fish Bait",
+        "name-USen": "Fish Bait",
         "price": 200
       },
     "14": {
-      "name": "Ordinary Flowers",
+      "name-USen": "Ordinary Flowers",
       "price": 40
     },
     "15": {
-        "name": "Hybrid Flowers",
+        "name-USen": "Hybrid Flowers",
         "price": 80
       },
     "16": {
-      "name": "Fruit Trees",
+      "name-USen": "Fruit Trees",
       "price": 300
     },
     "17": {
-        "name": "Coconut Trees",
+        "name-USen": "Coconut Trees",
         "price": 500
       },
     "18": {
-      "name": "Coconuts",
+      "name-USen": "Coconuts",
       "price": 250
     },
     "19": {
-      "name": "Home Island Fruit",
+      "name-USen": "Home Island Fruit",
       "price": 100
     },
     "20": {
-      "name": "Away Island Fruit",
+      "name-USen": "Away Island Fruit",
       "price": 500
+    },
+    "21": {
+      "name-USen": "Tree branch",
+      "price": 5
     }
 }
   
