@@ -13,6 +13,10 @@ import Footer from './Footer';
 class App extends React.Component{
   state = {
     selectedCollection: 'All Collectibles',
+    bugs: {},
+    fish: {},
+    seaCreatures: {},
+    misc: '',
     search: '',
     isChecked: false,
     month: '',
@@ -52,15 +56,24 @@ class App extends React.Component{
     this.setTime()
   }
 
+  mappingState = () =>{
+    this.setState({
+      fish: Object.keys(fishesData).map(key => {return fishesData[key]}).filter(fish => fish['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+      seaCreatures: Object.keys(seaCreaturesData).map(key => {return seaCreaturesData[key]}).filter(creature => creature['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+      bugs: Object.keys(bugsData).map(key => {return bugsData[key]}).filter(bugs => bugs['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+      misc: Object.keys(miscData).map(key => {return miscData[key]}).filter(item => item['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
+    })
+  }
+
   render(){
-    const mappedFish = Object.keys(fishesData).map(key => {return fishesData[key]}).filter(fish => fish['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
-    const mappedSeaCreatures = Object.keys(seaCreaturesData).map(key => {return seaCreaturesData[key]}).filter(creature => creature['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
-    const mappedBugs = Object.keys(bugsData).map(key => {return bugsData[key]}).filter(bugs => bugs['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
-    const mappedMisc = Object.keys(miscData).map(key => {return miscData[key]}).filter(item => item['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
-    if(this.state.isChecked){
-      const timedFish = mappedFish.filter(item => item['availability']['time-array'].indexOf(this.state.hour) !== -1);
-      console.log(timedFish)
-    }
+    // const mappedFish = 
+    // const mappedSeaCreatures = 
+    // const mappedBugs = 
+    // const mappedMisc = 
+    // if(this.state.isChecked){
+    //   const timedFish = mappedFish.filter(item => item['availability']['time-array'].indexOf(this.state.hour) !== -1);
+    //   console.log(timedFish)
+    // }
     
     
     return(
@@ -73,56 +86,56 @@ class App extends React.Component{
           <div className='list-top'><h2>Searching {this.state.selectedCollection}</h2></div>
             {this.state.selectedCollection === 'All Collectibles' &&
               <div>
-                {mappedFish.length > 0 &&
+                {this.state.fish.length > 0 &&
                   <ul>
                   <h3>Fishes</h3>
-                  {Object.keys(mappedFish).map(key => 
+                  {Object.keys(this.state.fish).map(key => 
                       <Collection 
                           key={key} 
                           index={key}
-                          details={mappedFish[key]} 
+                          details={this.state.fish[key]} 
                       />
                     )
                     }
                     </ul>
                 }
 
-                {mappedBugs.length > 0 &&
+                {this.state.bugs.length > 0 &&
                   <ul>
                   <h3>Bugs</h3>
-                  {Object.keys(mappedBugs).map(key => 
+                  {Object.keys(this.state.bugs).map(key => 
                       <Collection 
                           key={key} 
                           index={key}
-                          details={mappedBugs[key]} 
+                          details={this.state.bugs[key]} 
                       />
                     )
                     }
                     </ul>
                 }
 
-                {mappedSeaCreatures.length > 0 &&
+                {this.state.seaCreatures.length > 0 &&
                   <ul>
                   <h3>Sea Creatures</h3>
-                  {Object.keys(mappedSeaCreatures).map(key => 
+                  {Object.keys(this.state.seaCreatures).map(key => 
                       <Collection 
                           key={key} 
                           index={key}
-                          details={mappedSeaCreatures[key]} 
+                          details={this.state.seaCreatures[key]} 
                       />
                     )
                     }
                     </ul>
                 }
 
-                {mappedMisc.length > 0 &&
+                {this.state.misc.length > 0 &&
                   <ul>
                   <h3>Misc Collectibles</h3>
-                  {Object.keys(mappedMisc).map(key => 
+                  {Object.keys(this.state.misc).map(key => 
                       <Collection 
                           key={key} 
                           index={key}
-                          details={mappedMisc[key]} 
+                          details={this.state.misc[key]} 
                       />
                     )
                     }
@@ -133,11 +146,11 @@ class App extends React.Component{
 
             {this.state.selectedCollection === 'Fishes' &&
             <ul>
-              {Object.keys(mappedFish).map(key => 
+              {Object.keys(this.state.fish).map(key => 
                   <Collection 
                       key={key} 
                       index={key}
-                      details={mappedFish[key]} 
+                      details={this.state.fish[key]} 
                   />
                 )}
             </ul>
@@ -145,11 +158,11 @@ class App extends React.Component{
           
             {this.state.selectedCollection === 'Bugs' &&
             <ul>
-              {Object.keys(mappedBugs).map(key => 
+              {Object.keys(this.state.bugs).map(key => 
                   <Collection 
                       key={key} 
                       index={key}
-                      details={mappedBugs[key]} 
+                      details={this.state.bugs[key]} 
                   />
                 )}
             </ul>
@@ -157,11 +170,11 @@ class App extends React.Component{
 
             {this.state.selectedCollection === 'Sea Creatures' &&
             <ul> 
-              {Object.keys(mappedSeaCreatures).map(key => 
+              {Object.keys(this.state.seaCreatures).map(key => 
                   <Collection 
                       key={key} 
                       index={key}
-                      details={mappedSeaCreatures[key]} 
+                      details={this.state.seaCreatures[key]} 
                   />
                 )}
             </ul>
@@ -169,11 +182,11 @@ class App extends React.Component{
           
             {this.state.selectedCollection === 'Misc Collectibles' &&
             <ul>
-              {Object.keys(mappedMisc).map(key => 
+              {Object.keys(this.state.misc).map(key => 
                   <Collection 
                       key={key} 
                       index={key}
-                      details={mappedMisc[key]} 
+                      details={this.state.misc[key]} 
                   />
                 )}
             </ul>

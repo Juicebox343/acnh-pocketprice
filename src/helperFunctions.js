@@ -1,3 +1,10 @@
+export function timeFix(time){
+    if(time === '' || time === 'undefined'){
+        return 'All Day'
+    }
+    return time;
+}
+
 export function monthCalc(range){
     const newRange = range.split('-');
     const wordMonth =[];
