@@ -1,0 +1,290 @@
+{
+  "1": {
+    "name": {
+      "name-USen": "Giant Clam"
+    },
+    "price": 900
+  },
+  "2": {
+    "name": {
+      "name-USen": "Conch"
+    },
+    "price": 700
+  },
+  "3": {
+    "name": {
+      "name-USen": "Coral"
+    },
+    "price": 500
+  },
+  "4": {
+    "name": {
+      "name-USen": "Venus Comb"
+    },
+    "price": 300
+  },
+  "5": {
+    "name": {
+      "name-USen": "Sea Snail"
+    },
+    "price": 180
+  },
+  "6": {
+    "name": {
+      "name-USen": "Manila Clam"
+    },
+    "price": 100
+  },
+  "7": {
+    "name": {
+      "name-USen": "Cowrie"
+    },
+    "price": 60
+  },
+  "8": {
+    "name": {
+      "name-USen": "Hard Wood"
+    },
+    "price": 60
+  },
+  "9": {
+    "name": {
+      "name-USen": "Soft Wood"
+    },
+    "price": 60
+  },
+  "10": {
+    "name": {
+      "name-USen": "Stone"
+    },
+    "price": 75
+  },
+  "11": {
+    "name": {
+      "name-USen": "Clay"
+    },
+    "price": 100
+  },
+  "12": {
+    "name": {
+      "name-USen": "Iron Nugget"
+    },
+    "price": 375
+  },
+  "13": {
+    "name": {
+      "name-USen": "Gold Nugget"
+    },
+    "price": 10000
+  },
+  "14": {
+    "name": {
+      "name-USen": "Fish Bait"
+    },
+    "price": 200
+  },
+  "15": {
+    "name": {
+      "name-USen": "Flowers - Cosmos"
+    },
+    "price": 40
+  },
+  "16": {
+    "name": {
+      "name-USen": "Flowers - Hyacinth"
+    },
+    "price": 40
+  },
+  "17": {
+    "name": {
+      "name-USen": "Flowers - Lily"
+    },
+    "price": 40
+  },
+  "18": {
+    "name": {
+      "name-USen": "Flowers - Mums"
+    },
+    "price": 40
+  },
+  "19": {
+    "name": {
+      "name-USen": "Flowers - Pansy"
+    },
+    "price": 40
+  },
+  "20": {
+    "name": {
+      "name-USen": "Flowers - Rose"
+    },
+    "price": 40
+  },
+  "21": {
+    "name": {
+      "name-USen": "Flowers - Tulip"
+    },
+    "price": 40
+  },
+  "22": {
+    "name": {
+      "name-USen": "Flowers - Windflower"
+    },
+    "price": 40
+  },
+  "23": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Cosmos"
+    },
+    "price": 80
+  },
+  "24": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Hyacinth"
+    },
+    "price": 80
+  },
+  "25": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Lily"
+    },
+    "price": 80
+  },
+  "26": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Mums"
+    },
+    "price": 80
+  },
+  "27": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Pansy"
+    },
+    "price": 80
+  },
+  "28": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Rose"
+    },
+    "price": 80
+  },
+  "29": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Tulip"
+    },
+    "price": 80
+  },
+  "30": {
+    "name": {
+      "name-USen": "Hybrid Flowers - Windflower"
+    },
+    "price": 80
+  },
+  "31": {
+    "name": {
+      "name-USen": "Flowers - Gold Rose"
+    },
+    "price": 1000
+  },
+  "32": {
+    "name": {
+      "name-USen": "Fruit Trees"
+    },
+    "price": 300
+  },
+  "33": {
+    "name": {
+      "name-USen": "Coconut Trees"
+    },
+    "price": 500
+  },
+  "34": {
+    "name": {
+      "name-USen": "Coconuts"
+    },
+    "price": 250
+  },
+  "35": {
+    "name": {
+      "name-USen": "Home Island Fruit"
+    },
+    "price": 100
+  },
+  "36": {
+    "name": {
+      "name-USen": "Away Island Fruit"
+    },
+    "price": 500
+  },
+  "37": {
+    "name": {
+      "name-USen": "Tree branch"
+    },
+    "price": 5
+  },
+  "38": {
+    "name": {
+      "name-USen": "Star Fragment"
+    },
+    "price": 250
+  },
+  "39": {
+    "name": {
+      "name-USen": "Large Star Fragment"
+    },
+    "price": 2500
+  },
+  "40": {
+    "name": {
+      "name-USen": "Clump of Weeds"
+    },
+    "price": 10
+  },
+  "41": {
+    "name": {
+      "name-USen": "Bamboo Piece"
+    },
+    "price": 80
+  },
+  "42": {
+    "name": {
+      "name-USen": "Bamboo Tree"
+    },
+    "price": 1500
+  },
+  "43": {
+    "name": {
+      "name-USen": "Young Spring Bamboo"
+    },
+    "price": 200
+  },
+  "44": {
+    "name": {
+      "name-USen": "Wasp Nest"
+    },
+    "price": 300
+  },
+  "45": {
+    "name": {
+      "name-USen": "Boot"
+    },
+    "price": 10
+  },
+  "46": {
+    "name": {
+      "name-USen": "Empty Can"
+    },
+    "price": 10
+  },
+  "47": {
+    "name": {
+      "name-USen": "Cherry Blossom Petal"
+    },
+    "price": 200
+  },
+  "48": {
+    "name": {
+      "name-USen": "Sand Dollar"
+    },
+    "price": 120
+  }
+}

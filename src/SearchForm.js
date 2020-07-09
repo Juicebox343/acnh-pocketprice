@@ -21,17 +21,14 @@ class SearchForm extends React.Component{
     
     render(){
         return(
-            <div>
+            <div className='search-area'>
                 <div className='searchForm' ref={this.searchRef}>      
                     <input name='search' type='text' placeholder='Search..' onChange={(e)=>this.props.searchBar(e)} />
-                    <label className='filter-expand'>
-                        <input type='checkbox' onChange={this.filterToggle}/>
-                        <span className='filter-expand-label'>Filters</span>
-                    </label>
+                    <button className='filter-expand-button' onClick={this.filterToggle}>Filters</button>
                 </div>
                 <div>
                     {this.state.filter === true &&
-                        <FilterBtns selectedCollection={this.props.selectedCollection} filterToggle={this.filterToggle}/>
+                        <FilterBtns selectedCollection={this.props.selectedCollection} filterToggle={this.filterToggle} onChangeFunction={this.props.onChangeFunction} isChecked={this.isChecked}/>
                     }
                 </div>
             </div>
