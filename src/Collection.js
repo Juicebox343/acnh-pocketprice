@@ -34,7 +34,7 @@ class Collection extends React.Component{
                   <p>Time: {timeFix(details['availability']['time'])}</p>
                   <p>N. Hemisphere: {monthCalc(details['availability']['month-northern'])}</p>
                   <p>S. Hemisphere: {monthCalc(details['availability']['month-southern'])}</p>
-                  <p>Rarity: {details['availability']['location']}</p>
+                  <p>Rarity: {details['availability']['rarity']}</p>
                 </div>
               }    
           </button>  

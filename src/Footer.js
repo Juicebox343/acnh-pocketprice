@@ -12,9 +12,23 @@ class Footer extends React.Component{
         const dateTime = {...this.props};
         return(
             <footer>
-                <div>
-                <p><span className='clock'><span className='clock'>{dateTime.hour - 12}</span>:<span className='clock'>{fixMinute(dateTime.minute)}</span><span className='meridan'> {dateTime.hour >= 12 ? 'PM' : 'AM'}</span></span></p>
-                <span>{fixMonth(dateTime.month)}</span><span> {dateTime.date}</span><span className='day'> {fixWeekDay(dateTime.day)}</span>
+                <div className='bigClock'>
+                <p className='clock'>
+                    <span>
+                        {dateTime.hour - 12}:{fixMinute(dateTime.minute)}
+                    </span>
+                    <span className='meridian'> 
+                    &nbsp;{dateTime.hour >= 12 ? 'PM' : 'AM'}
+                    </span>
+                </p>
+                <p className='monthAndDate'>
+                    <span>
+                        {fixMonth(dateTime.month)}&nbsp;{dateTime.date}
+                    </span>
+                    <span className='day'> 
+                        {fixWeekDay(dateTime.day)}
+                    </span>
+                </p>
                 </div>
             </footer>
         )

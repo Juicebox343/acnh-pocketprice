@@ -31,23 +31,16 @@ body{
 }
 
 header{
-    grid-area: header;
     background-image: url('./animalcrossing.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: 100%;
     height: 128px;
-    
 }
 
 .container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 128px auto;
-    grid-template-areas: 
-    'header'
-    'main';
+
 }
 
 h2{
@@ -71,9 +64,6 @@ ul{
     border-radius: 7px;
 }
 
-.creature-list h2{
-
-}
 
 .creature-data{
     list-style: none;
@@ -250,17 +240,21 @@ input[type=text]:focus{
 
 }
 
-.list-top{
-
-}
 
 footer{
-    grid-area: footer;
     position: fixed;
-    bottom: 10%;
-    left: 5%;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    
+    background-color: #1183c3;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    height: 130px;
+}
+
+footer span, footer p{
+    color: white;
 }
 
 header span, header p{
@@ -271,33 +265,38 @@ header span, header p{
 }
 
 .bigClock{
-    width: 10%;
+    
 }
 
 main{
-    grid-area: main;
-    height: 100%;
     width: 100%;
+
 }
 
 .clock{
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
-    font-size: 4rem;
+    font-size: 3.6rem;
+    color: white;
+    border-bottom: white 3px solid;
 }
 
-
 .meridian{
-    font-size: 10px;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .day{
-    color: var(--background-color);
+    color: #1183c3;
     background-color: white;
-    border-radius: 50px; 
-    padding: 6px 0 0 4px;
-    width: 100px;
+    border-radius: 15px; 
+    padding: 6px 6px 4px 6px;
     margin-left: 10px;
     text-align: center;
-    display: inline-block;
+    
+}
+
+.monthAndDate{
+    font-size: 1rem;
+    margin: 0;
 }

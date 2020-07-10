@@ -28,7 +28,7 @@ class SearchForm extends React.Component{
                 </div>
                 <div>
                     {this.state.filter === true &&
-                        <FilterBtns selectedCollection={this.props.selectedCollection} filterToggle={this.filterToggle} onChangeFunction={this.props.onChangeFunction} isChecked={this.isChecked}/>
+                        <FilterBtns selectedCollection={this.props.selectedCollection} filterToggle={this.filterToggle} onChangeFunction={this.props.onChangeFunction} isChecked={this.props.isChecked}/>
                     }
                 </div>
             </div>

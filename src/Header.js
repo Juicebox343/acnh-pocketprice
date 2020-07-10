@@ -1,9 +1,9 @@
 import React from 'react';
-import {fixMinute, fixMonth, fixWeekDay} from './helperFunctions'
+
 
 class Header extends React.Component{
     render(){
-        const dateTime = {...this.props};
+    
         return(
             
             <header>

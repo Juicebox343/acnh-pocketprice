@@ -7,7 +7,7 @@ import fishesData from './data/fishes.json';
 import miscData from './data/misc.json';
 import seaCreaturesData from './data/sea.json';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 
 class App extends React.Component{
@@ -19,15 +19,16 @@ class App extends React.Component{
     misc: '',
     search: '',
     isChecked: false,
-    month: '',
-    day: '',
-    hour: '',
-    minute: ''
+    month: null,
+    day: null,
+    hour: null,
+    minute: null
   }
 
   searchBar = (event) =>{
     let keyword = event.target.value;
     this.setState({search:keyword})
+    this.mappingState();
   }
   
   selectedCollection = (e) => {
@@ -38,6 +39,7 @@ class App extends React.Component{
     this.setState(initialState => ({
       isChecked: !initialState.isChecked
     }));
+    this.mappingState();
   }
 
   setTime = () =>{
@@ -54,15 +56,26 @@ class App extends React.Component{
     
   componentDidMount(){
     this.setTime()
+    this.mappingState();
   }
 
   mappingState = () =>{
-    this.setState({
-      fish: Object.keys(fishesData).map(key => {return fishesData[key]}).filter(fish => fish['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
-      seaCreatures: Object.keys(seaCreaturesData).map(key => {return seaCreaturesData[key]}).filter(creature => creature['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
-      bugs: Object.keys(bugsData).map(key => {return bugsData[key]}).filter(bugs => bugs['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
-      misc: Object.keys(miscData).map(key => {return miscData[key]}).filter(item => item['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
-    })
+    if(this.state.isChecked === true){
+      this.setState({
+        fish: Object.keys(fishesData).map(key => {return fishesData[key]}).filter(fish => fish['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).filter(fish => fish['availability']['time-array'].includes(parseInt(this.state.hour))).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+        seaCreatures: Object.keys(seaCreaturesData).map(key => {return seaCreaturesData[key]}).filter(creature => creature['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).filter(creature => creature['availability']['time-array'].includes(parseInt(this.state.hour))).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+        bugs: Object.keys(bugsData).map(key => {return bugsData[key]}).filter(bugs => bugs['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).filter(bugs => bugs['availability']['time-array'].includes(parseInt(this.state.hour))).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+        misc: Object.keys(miscData).map(key => {return miscData[key]}).filter(item => item['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
+      })
+    } else {
+      this.setState({
+        fish: Object.keys(fishesData).map(key => {return fishesData[key]}).filter(fish => fish['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+        seaCreatures: Object.keys(seaCreaturesData).map(key => {return seaCreaturesData[key]}).filter(creature => creature['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+        bugs: Object.keys(bugsData).map(key => {return bugsData[key]}).filter(bugs => bugs['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1),
+        misc: Object.keys(miscData).map(key => {return miscData[key]}).filter(item => item['name']['name-USen'].toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1).sort((a, b) => (a.name['name-USen'] > b.name['name-USen']) ? 1 : -1)
+      })
+    }
+
   }
 
   render(){
@@ -80,7 +93,7 @@ class App extends React.Component{
       <div className='container'>
         <Header hour={this.state.hour} minute={this.state.minute} month={this.state.month} day={this.state.day} date={this.state.date}/>
         <main>
-          <SearchForm searchBar={this.searchBar} selectedCollection={this.selectedCollection} creatureList={this.state.selectedCollection} onChangeFunction={this.onChange} isChecked={this.isChecked} />
+          <SearchForm searchBar={this.searchBar} selectedCollection={this.selectedCollection} creatureList={this.state.selectedCollection} onChangeFunction={this.onChange} isChecked={this.state.isChecked} />
           <ul className='creature-list'>   
   
           <div className='list-top'><h2>Searching {this.state.selectedCollection}</h2></div>
