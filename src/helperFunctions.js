@@ -99,7 +99,7 @@ export function fixMonth(numMonth){
         month[10] = "November";
         month[11] = "December";
 
-    return  month[numMonth + 1]
+    return  month[numMonth-1]
 }
 
 export function fixMinute(numMinute){
@@ -108,6 +108,11 @@ export function fixMinute(numMinute){
     } 
     return numMinute
 }
-    
 
+export function fixHour(numHour){
+    if(numHour > 12){
+        return numHour - 12
+    } 
+    return numHour
+}
     

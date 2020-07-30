@@ -57,28 +57,67 @@ h4{
     margin: 0;
 }
 
-ul{
+
+table{
     margin: auto;
-    background-color: var(--list-background);
     padding: 0.2rem 0.2rem;
     border-radius: 7px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 .5rem;
 }
 
+.creature-row{
+    width: 100%;
+    background-color: var(--list-background);
+}
 
 .creature-data{
-    list-style: none;
-    background-color: var(--list-foreground);
+    vertical-align: middle;
     box-shadow: 2px 3px 0 var(--stand-out);
+    background-color: var(--list-foreground);
     color: #3f3f3f;
     border-radius: 7px;
-    transition: margin .2s;
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    justify-content: space-between;
     margin: 0.5rem 0;
 }
 
+.creature-data td:first-of-type{
+    width: 100%;
+}
+
+
+
+.add-to-pocket-slot{
+    display: inline-block;
+    text-align: right;
+    padding: 1rem;
+}
+
+
 .headline-details{
+    width: 100%;
+    border-radius: 7px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+}
+
+.headline-details td{
+    width: 33.3333%;
+    text-align: center;
+}
+
+.headline-details td:first-of-type{
+    width: 33.3333%;
+    text-align: left;
+}
+
+.headline-details td:last-of-type{
+    text-align: right;
+    width: 33.3333%;
 }
 
 .creature-details{
@@ -106,10 +145,10 @@ h3{
 .button-data{
     background-color: transparent;
     border: none;
-    width: 100%;
     font-size: 1rem;
     text-align: left;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 .searchForm{
@@ -240,17 +279,14 @@ input[type=text]:focus{
 
 }
 
-
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     width: 100%;
-    background-color: #1183c3;
     color: white;
-    padding: 1rem;
     display: flex;
-    height: 130px;
+    height: 115px;
 }
 
 footer span, footer p{
@@ -265,18 +301,19 @@ header span, header p{
 }
 
 .bigClock{
-    
+    background-color: #1182c32f;
+    border-radius: 20px;
+    padding: 0.5rem;
 }
 
 main{
     width: 100%;
-
 }
 
 .clock{
     margin: 0 0 10px 0;
     padding: 0;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     color: white;
     border-bottom: white 3px solid;
 }
@@ -287,7 +324,7 @@ main{
 }
 
 .day{
-    color: #1183c3;
+    color: var(--background-color);;
     background-color: white;
     border-radius: 15px; 
     padding: 6px 6px 4px 6px;
@@ -299,4 +336,115 @@ main{
 .monthAndDate{
     font-size: 1rem;
     margin: 0;
+}
+
+.addToPocket{
+    width: 35px;
+    height: 35px;
+    font-size: 2.2rem;
+  
+    border-radius: 10px;
+    border: none;
+    background-color: #3277b8; 
+    /* box-shadow: 2px 2px 0px #7c7c4b; */
+    color: #fff;
+}
+
+.list-top{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myPocket{
+    width: 50%;
+    background-color: var(--list-foreground);
+    box-shadow: 2px 3px 0 var(--stand-out);
+    border-radius: 15px;
+    padding: .5rem;
+    margin: 0;
+}
+
+.myPocket{
+    margin: auto;
+}
+
+.pocketContents{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pocketIcons{
+    width: 50px;
+    position: relative;
+    bottom: 100%;
+    right: 100%;
+}
+
+.itemSlot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pocket-button{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #3277b8;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+#pocket-table{
+    border-spacing: 20px;
+    width: 100%;
+}
+
+.pocket-row{
+    width: 100%;
+}
+
+.pocket-slot{
+    width: 50px;
+    height: 50px;
+}
+
+.pocket-slot-empty{
+    background: #ac7b4279;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 0%;
+    left: 28%;
+}
+
+
+.list-top input[type=checkbox]{
+    display: none;
+}
+
+.list-top input[type=checkbox] + .availability-filter-label{
+    cursor: pointer;
+    display: inline-block;
+    border: 2px var(--stand-out) solid;
+    border-radius: 5px;
+    padding: 0 0 0 0px;
+    background:url('/icons/FtrClockBell_Remake_0_0.png') no-repeat;
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+
+}
+
+.list-top input[type=checkbox]:checked + .availability-filter-label{
+    display: inline-block;
+    border: 2px var(--main-emphasis-color) solid;
+    box-shadow: 0px 0px 3px var(--main-emphasis-color) inset, 0px 0px 5px var(--main-emphasis-color) ;
+    background-size: 95%;
+    background-position: center;
 }

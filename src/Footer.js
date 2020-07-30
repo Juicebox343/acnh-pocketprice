@@ -1,5 +1,5 @@
 import React from 'react';
-import {fixWeekDay, fixMonth, fixMinute} from './helperFunctions'
+import {fixWeekDay, fixMonth, fixMinute, fixHour} from './helperFunctions'
 
 
 class Footer extends React.Component{
@@ -15,7 +15,7 @@ class Footer extends React.Component{
                 <div className='bigClock'>
                 <p className='clock'>
                     <span>
-                        {dateTime.hour - 12}:{fixMinute(dateTime.minute)}
+                        {fixHour(dateTime.hour)}:{fixMinute(dateTime.minute)}
                     </span>
                     <span className='meridian'> 
                     &nbsp;{dateTime.hour >= 12 ? 'PM' : 'AM'}

@@ -286,5 +286,17 @@
       "name-USen": "Sand Dollar"
     },
     "price": 120
+  },
+  "49": {
+    "name": {
+      "name-USen": "Acorn"
+    },
+    "price": 200
+  },
+  "50": {
+    "name":{
+      "name-USen": "Bamboo Shoot"
+    },
+    "price": 250
   }
 }

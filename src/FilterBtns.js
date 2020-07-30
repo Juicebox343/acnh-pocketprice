@@ -7,9 +7,7 @@ class FilterBtns extends React.Component{
     this.props.filterToggle()
   }
 
-  onChange = (e) =>{
-    this.props.onChangeFunction(e.target.value)
-  }
+
 
     render(){
       return(
@@ -20,7 +18,7 @@ class FilterBtns extends React.Component{
             <button value='Sea Creatures' onClick={this.handleClick}>Sea Creatures</button>
             <button value='Misc Collectibles' onClick={this.handleClick}>Misc</button>
             <button value='All Collectibles' onClick={this.handleClick}>Show all</button>
-            <label><input type='checkbox' className='filter-expand-button' checked={this.props.isChecked} onChange={this.onChange}/>Available right now</label>
+            
           </div>
           {/* <div>
             <input type='checkbox'/>
