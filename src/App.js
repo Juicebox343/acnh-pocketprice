@@ -4,7 +4,7 @@ import Collection from './Collection';
 import SearchForm from './SearchForm';
 import bugsData from './data/bugs.json';
 import fishesData from './data/fishes.json';
-import miscData from './data/misc.json';
+import miscData from './data/misc1.json';
 import seaCreaturesData from './data/sea.json';
 import Header from './Header';
 import Pocket from './Pocket';
