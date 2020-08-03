@@ -9,6 +9,7 @@ import seaCreaturesData from './data/sea.json';
 import Header from './Header';
 import Pocket from './Pocket';
 import Footer from './Footer';
+import critters from './data/allcreatures.json';
 
 
 class App extends React.Component{
@@ -64,14 +65,59 @@ class App extends React.Component{
     setTimeout(this.setTime, 60000)
   }
 
-  addToPocket = (key, price, image, type) => {
+  // addToPocket = (key, price, image, type, stack, number) => {
+  //   if (this.state.pocketContent.length === 40){
+  //     return
+  //   }
+  //   let pocketContent = [...this.state.pocketContent ];
+  //   let pocketValue = this.state.pocketValue;
+
+  //   let isPresent = Object.keys(pocketContent).map(key => {return pocketContent[key]}).filter(item => item.item === key) 
+  
+  //   if(isPresent.length === 0){
+  //     pocketContent.push({item: key, price: price, image: image, type: type, number: 1, stack: stack})
+  //     pocketValue = pocketValue + price;
+  //   } else if(isPresent.length >= 1 && pocketContent[key].number < stack){
+  //     console.log('hey')
+  //     pocketContent.push({item: key, price: price, image: image, type: type, number: 1, stack: stack})
+  //     pocketValue = pocketValue + price;
+  //   } else {
+  //     let itemIndex = pocketContent.findIndex(e => e.item === key)
+  //     if(pocketContent[itemIndex].number < stack){
+  //       pocketContent[itemIndex].number = pocketContent[itemIndex].number + 1
+  //       pocketValue = pocketValue + price;
+  //     }
+      
+  //   }
+
+  //   this.setState({ pocketContent, pocketValue });
+  // }
+
+  addToPocket = (item, type) => {
     if (this.state.pocketContent.length === 40){
       return
     }
+
     let pocketContent = [...this.state.pocketContent ];
-    pocketContent.push({item: key, price: price, image: image, type: type}) 
     let pocketValue = this.state.pocketValue;
-    pocketValue = pocketValue + price;
+
+    let itemValue = this.state.item
+    pocketValue = pocketValue + itemValue
+    switch(type){
+      case 'fish':
+        pocketContent.push({type: 'fish', item: item})
+        break;
+      case 'bugs':
+        pocketContent.push({type: 'bugs', item: item})
+        break;
+      case 'sea':
+        pocketContent.push({type: 'seaCreatures', item: item})
+        break;
+      case 'misc':
+        pocketContent.push({type: 'misc', item: item})
+        break
+    }
+  
     this.setState({ pocketContent, pocketValue });
   }
 
@@ -83,9 +129,6 @@ class App extends React.Component{
     this.setState({pocketContent, pocketValue});
   }
 
-  functionofsomekind = (object) => {
-    
-  }
     
   componentDidMount(){
     this.setTime()
@@ -176,7 +219,7 @@ class App extends React.Component{
                               details={this.state.seaCreatures[key]} 
                               timeHour={this.state.hour}
                               addToPocket={this.addToPocket}
-                              type='sea'
+                              type='seaCreatures'
                           />
                         )}
                     </tbody>

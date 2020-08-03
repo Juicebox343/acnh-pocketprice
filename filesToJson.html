@@ -21,7 +21,6 @@
        
        <script>
             nameArray = [];
-            nameObject = {};
             const fileSelector = document.getElementById('file-selector');
             fileSelector.addEventListener('change', (event) => {
             const fileList = event.target.files;
@@ -31,11 +30,8 @@
                 let slicedName = itemName.slice(0, itemName.length - 4);
                 nameArray.push({name:{['name-USen']: slicedName}, fileName: file.name, price: 0, stackSize: 0})
                 }
-                nameArray.map(key => {
-                    nameObject = {key : nameArray[key]}
-                })
 
-                myJSON = JSON.stringify(nameObject);
+                myJSON = JSON.stringify(nameArray);
                 
                 let span = document.createElement('span');
                 span.textContent = myJSON;

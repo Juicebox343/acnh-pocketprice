@@ -3,15 +3,15 @@
     "name": {
       "name-USen": "Acorn"
     },
-    "fileName": "acorn.png",
+    "file-name": "acorn",
     "price": 200,
-    "stackSize": 1
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Apple (Native)"
     },
-    "fileName": "apple.png",
+    "file-name": "apple",
     "price": 100,
     "stackSize": 10
   },
@@ -19,7 +19,7 @@
     "name": {
       "name-USen": "Apple"
     },
-    "fileName": "apple.png",
+    "file-name": "apple",
     "price": 500,
     "stackSize": 10
   },
@@ -27,23 +27,23 @@
     "name": {
       "name-USen": "Apple Tree"
     },
-    "fileName": "apple_tree.png",
+    "file-name": "apple_tree",
     "price": 300,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Bamboo"
+      "name-USen": "Bamboo Piece"
     },
-    "fileName": "bamboo.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "bamboo",
+    "price": 80,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Bamboo Shoot"
     },
-    "fileName": "bamboo_shoot.png",
+    "file-name": "bamboo_shoot",
     "price": 250,
     "stackSize": 10
   },
@@ -51,7 +51,7 @@
     "name": {
       "name-USen": "Bamboo Tree"
     },
-    "fileName": "bamboo_tree.png",
+    "file-name": "bamboo_tree",
     "price": 1500,
     "stackSize": 1
   },
@@ -59,7 +59,7 @@
     "name": {
       "name-USen": "Black Cosmos"
     },
-    "fileName": "black_cosmos.png",
+    "file-name": "black_cosmos",
     "price": 80,
     "stackSize": 10
   },
@@ -67,1208 +67,1424 @@
     "name": {
       "name-USen": "Black Cosmos Plant"
     },
-    "fileName": "black_cosmos_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_cosmos_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Black Lilly"
+      "name-USen": "Black Lily"
     },
-    "fileName": "black_lilly.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_lilly",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Black Lilly_plant"
+      "name-USen": "Black lily Plant"
     },
-    "fileName": "black_lilly_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_lilly_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Black Rose"
     },
-    "fileName": "black_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_rose",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Black Rose_plant"
+      "name-USen": "Black Rose Plant"
     },
-    "fileName": "black_rose_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_rose_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Black Tulip"
     },
-    "fileName": "black_tulip.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_tulip",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Black Tulip_plant"
+      "name-USen": "Black Tulip Plant"
     },
-    "fileName": "black_tulip_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "black_tulip_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Blue Hyacinth"
     },
-    "fileName": "blue_hyacinth.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "blue_hyacinth",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Blue Hyacinth_plant"
+      "name-USen": "Blue Hyacinth Plant"
     },
-    "fileName": "blue_hyacinth_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "blue_hyacinth_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Blue Pansy"
     },
-    "fileName": "blue_pansy.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "blue_pansy",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Blue Pansy_plant"
+      "name-USen": "Blue Pansy Plant"
     },
-    "fileName": "blue_pansy_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "blue_pansy_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Blue Rose"
     },
-    "fileName": "blue_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "blue_rose",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Blue Rose_plant"
+      "name-USen": "Blue Rose Plant"
     },
-    "fileName": "blue_rose_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "blue_rose_plant",
+    "price": 240,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Blue Windflower"
     },
-    "fileName": "blue_windflower.png",
-    "price": 0,
+    "file-name": "blue_windflower",
+    "price": 80,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Blue Windflower Plant"
+    },
+    "file-name": "blue_windflower_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Blue Windflower_plant"
+      "name-USen": "Boot"
     },
-    "fileName": "blue_windflower_plant.png",
-    "price": 0,
+    "file-name": "boot",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Cedar Sapling"
     },
-    "fileName": "cedar_sapling.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "cedar_sapling",
+    "price": 160,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Cedar Tree"
     },
-    "fileName": "cedar_tree.png",
-    "price": 0,
+    "file-name": "cedar_tree",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Cherry"
     },
-    "fileName": "cherry.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "cherry",
+    "price": 100,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Cherry Blossom_petal"
     },
-    "fileName": "cherry_blossom_petal.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "cherry_blossom_petal",
+    "price": 200,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Cherry Tree"
     },
-    "fileName": "cherry_tree.png",
-    "price": 0,
+    "file-name": "cherry_tree",
+    "price": 300,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Clay"
     },
-    "fileName": "clay.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "clay",
+    "price": 100,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Clump Of_weeds"
     },
-    "fileName": "clump_of_weeds.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "clump_of_weeds",
+    "price": 10,
+    "stackSize": 99
   },
   {
     "name": {
       "name-USen": "Coconut"
     },
-    "fileName": "coconut.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "coconut",
+    "price": 250,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Coconut Tree"
     },
-    "fileName": "coconut_tree.png",
-    "price": 0,
+    "file-name": "coconut_tree",
+    "price": 500,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Conch Shell"
     },
-    "fileName": "conch_shell.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "conch_shell",
+    "price": 700,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Coral"
     },
-    "fileName": "coral.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "coral",
+    "price": 500,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Cowrie"
     },
-    "fileName": "cowrie.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "cowrie",
+    "price": 60,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Elegant Mushroom"
     },
-    "fileName": "elegant_mushroom.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "elegant_mushroom",
+    "price": 10000,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Flat Mushroom"
     },
-    "fileName": "flat_mushroom.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "flat_mushroom",
+    "price": 200,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Giant Clam"
     },
-    "fileName": "giant_clam.png",
-    "price": 0,
+    "file-name": "giant_clam",
+    "price": 900,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Gold Nugget"
     },
-    "fileName": "gold_nugget.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "gold_nugget",
+    "price": 10000,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Gold Rose"
     },
-    "fileName": "gold_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "gold_rose",
+    "price": 1000,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Gold Rose_plant"
+      "name-USen": "Gold Rose Plant"
     },
-    "fileName": "gold_rose_plant.png",
-    "price": 0,
+    "file-name": "gold_rose_plant",
+    "price": 1000,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Green Mum"
     },
-    "fileName": "green_mum.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "green_mum",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Green Mum_plant"
+      "name-USen": "Green Mum Plant"
     },
-    "fileName": "green_mum_plant.png",
-    "price": 0,
+    "file-name": "green_mum_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Hard Wood"
     },
-    "fileName": "hard_wood.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "hard_wood",
+    "price": 60,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Iron Nugget"
     },
-    "fileName": "iron_nugget.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "iron_nugget",
+    "price": 375,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Large Snowflake"
     },
-    "fileName": "large_snowflake.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "large_snowflake",
+    "price": 2500,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Lily Of_the_valley"
     },
-    "fileName": "lily_of_the_valley.png",
+    "file-name": "lily_of_the_valley",
     "price": 0,
-    "stackSize": 1
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Manialla Clam"
+      "name-USen": "Manila Clam"
     },
-    "fileName": "manialla_clam.png",
-    "price": 0,
+    "file-name": "manila_clam",
+    "price": 100,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Maple Leaf"
     },
-    "fileName": "maple_leaf.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "maple_leaf",
+    "price": 200,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Money Tree"
     },
-    "fileName": "money_tree.png",
-    "price": 0,
+    "file-name": "money_tree",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange"
     },
-    "fileName": "orange.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange",
+    "price": 100,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Orange Cosmos"
     },
-    "fileName": "orange_cosmos.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_cosmos",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Cosmos_plant"
+      "name-USen": "Orange Cosmos Plant"
     },
-    "fileName": "orange_cosmos_plant.png",
-    "price": 0,
+    "file-name": "orange_cosmos_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Hyacinth"
     },
-    "fileName": "orange_hyacinth.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_hyacinth",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Hyacinth_plant"
+      "name-USen": "Orange Hyacinth Plant"
     },
-    "fileName": "orange_hyacinth_plant.png",
-    "price": 0,
+    "file-name": "orange_hyacinth_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Lily"
     },
-    "fileName": "orange_lily.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_lily",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Lily_plant"
+      "name-USen": "Orange Lily Plant"
     },
-    "fileName": "orange_lily_plant.png",
-    "price": 0,
+    "file-name": "orange_lily_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Pansy"
     },
-    "fileName": "orange_pansy.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_pansy",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Pansy_plant"
+      "name-USen": "Orange Pansy Plant"
     },
-    "fileName": "orange_pansy_plant.png",
-    "price": 0,
+    "file-name": "orange_pansy_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Rose"
     },
-    "fileName": "orange_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_rose",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Rose_plant"
+      "name-USen": "Orange Rose Plant"
     },
-    "fileName": "orange_rose_plant.png",
-    "price": 0,
+    "file-name": "orange_rose_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Tree"
     },
-    "fileName": "orange_tree.png",
-    "price": 0,
+    "file-name": "orange_tree",
+    "price": 300,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Tulip"
     },
-    "fileName": "orange_tulip.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_tulip",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Tulip_plant"
+      "name-USen": "Orange Tulip Plant"
     },
-    "fileName": "orange_tulip_plant.png",
-    "price": 0,
+    "file-name": "orange_tulip_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Orange Windflower"
     },
-    "fileName": "orange_windflower.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "orange_windflower",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Orange Windflower_plant"
+      "name-USen": "Orange Windflower Plant"
     },
-    "fileName": "orange_windflower_plant.png",
-    "price": 0,
+    "file-name": "orange_windflower_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Peach"
     },
-    "fileName": "peach.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "peach",
+    "price": 100,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Peach Tree"
     },
-    "fileName": "peach_tree.png",
-    "price": 0,
+    "file-name": "peach_tree",
+    "price": 300,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pear"
     },
-    "fileName": "pear.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "pear",
+    "price": 100,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Pear Tree"
     },
-    "fileName": "pear_tree.png",
-    "price": 0,
+    "file-name": "pear_tree",
+    "price": 300,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pinecone"
     },
-    "fileName": "pinecone.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "pinecone",
+    "price": 200,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Pink Cosmos"
     },
-    "fileName": "pink_cosmos.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "pink_cosmos",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Pink Cosmos_plant"
+      "name-USen": "Pink Cosmos Plant"
     },
-    "fileName": "pink_cosmos_plant.png",
-    "price": 0,
+    "file-name": "pink_cosmos_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pink Hyacinth"
     },
-    "fileName": "pink_hyacinth.png",
-    "price": 0,
+    "file-name": "pink_hyacinth",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Pink Hyacinth_plant"
+      "name-USen": "Pink Hyacinth Plant"
     },
-    "fileName": "pink_hyacinth_plant.png",
-    "price": 0,
+    "file-name": "pink_hyacinth_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pink Lily"
     },
-    "fileName": "pink_lily.png",
-    "price": 0,
+    "file-name": "pink_lily",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Pink Lily_plant"
+      "name-USen": "Pink Lily Plant"
     },
-    "fileName": "pink_lily_plant.png",
-    "price": 0,
+    "file-name": "pink_lily_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pink Mum"
     },
-    "fileName": "pink_mum.png",
-    "price": 0,
+    "file-name": "pink_mum",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Pink Mum_plant"
+      "name-USen": "Pink Mum Plant"
     },
-    "fileName": "pink_mum_plant.png",
-    "price": 0,
+    "file-name": "pink_mum_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pink Rose"
     },
-    "fileName": "pink_rose.png",
-    "price": 0,
+    "file-name": "pink_rose",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Pink Rose_plant"
+      "name-USen": "Pink Rose Plant"
     },
-    "fileName": "pink_rose_plant.png",
-    "price": 0,
+    "file-name": "pink_rose_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pink Tulip"
     },
-    "fileName": "pink_tulip.png",
-    "price": 0,
+    "file-name": "pink_tulip",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Pink Tulip_plant"
+      "name-USen": "Pink Tulip Plant"
     },
-    "fileName": "pink_tulip_plant.png",
-    "price": 0,
+    "file-name": "pink_tulip_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Pink Windflower"
     },
-    "fileName": "pink_windflower.png",
-    "price": 0,
+    "file-name": "pink_windflower",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Pink Windflower_plant"
+      "name-USen": "Pink Windflower Plant"
     },
-    "fileName": "pink_windflower_plant.png",
-    "price": 0,
+    "file-name": "pink_windflower_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Purple Hyacinth"
     },
-    "fileName": "purple_hyacinth.png",
-    "price": 0,
+    "file-name": "purple_hyacinth",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Purple Hyacinth_plant"
+      "name-USen": "Purple Hyacinth Plant"
     },
-    "fileName": "purple_hyacinth_plant.png",
-    "price": 0,
+    "file-name": "purple_hyacinth_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Purple Mum"
     },
-    "fileName": "purple_mum.png",
-    "price": 0,
+    "file-name": "purple_mum",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Purple Mum_plant"
+      "name-USen": "Purple Mum Plant"
     },
-    "fileName": "purple_mum_plant.png",
-    "price": 0,
+    "file-name": "purple_mum_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Purple Pansy"
     },
-    "fileName": "purple_pansy.png",
-    "price": 0,
+    "file-name": "purple_pansy",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Purple Pansy_plant"
+      "name-USen": "Purple Pansy Plant"
     },
-    "fileName": "purple_pansy_plant.png",
-    "price": 0,
+    "file-name": "purple_pansy_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Purple Rose"
     },
-    "fileName": "purple_rose.png",
-    "price": 0,
+    "file-name": "purple_rose",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Purple Rose_plant"
+      "name-USen": "Purple Rose Plant"
     },
-    "fileName": "purple_rose_plant.png",
-    "price": 0,
+    "file-name": "purple_rose_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Purple Tulip"
     },
-    "fileName": "purple_tulip.png",
-    "price": 0,
+    "file-name": "purple_tulip",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Purple Tulip_plant"
+      "name-USen": "Purple Tulip Plant"
     },
-    "fileName": "purple_tulip_plant.png",
-    "price": 0,
+    "file-name": "purple_tulip_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Purple Windflower"
     },
-    "fileName": "purple_windflower.png",
-    "price": 0,
+    "file-name": "purple_windflower",
+    "price": 80,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Purple Windflower_plant"
+      "name-USen": "Purple Windflower Plant"
     },
-    "fileName": "purple_windflower_plant.png",
-    "price": 0,
+    "file-name": "purple_windflower_plant",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Rare Mushroom"
     },
-    "fileName": "rare_mushroom.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "rare_mushroom",
+    "price": 16000,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Red Cosmos"
     },
-    "fileName": "red_cosmos.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_cosmos",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Cosmos_plant"
+      "name-USen": "Red Cosmos Plant"
     },
-    "fileName": "red_cosmos_plant.png",
-    "price": 0,
+    "file-name": "red_cosmos_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Hyacinth"
     },
-    "fileName": "red_hyacinth.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_hyacinth",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Hyacinth_plant"
+      "name-USen": "Red Hyacinth Plant"
     },
-    "fileName": "red_hyacinth_plant.png",
-    "price": 0,
+    "file-name": "red_hyacinth_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Lily"
     },
-    "fileName": "red_lily.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_lily",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Lily_plant"
+      "name-USen": "Red Lily Plant"
     },
-    "fileName": "red_lily_plant.png",
-    "price": 0,
+    "file-name": "red_lily_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Mum"
     },
-    "fileName": "red_mum.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_mum",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Mum_plant"
+      "name-USen": "Red Mum Plant"
     },
-    "fileName": "red_mum_plant.png",
-    "price": 0,
+    "file-name": "red_mum_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Pansy"
     },
-    "fileName": "red_pansy.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_pansy",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Pansy_plant"
+      "name-USen": "Red Pansy Plant"
     },
-    "fileName": "red_pansy_plant.png",
-    "price": 0,
+    "file-name": "red_pansy_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Rose"
     },
-    "fileName": "red_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_rose",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Rose_plant"
+      "name-USen": "Red Rose Plant"
     },
-    "fileName": "red_rose_plant.png",
-    "price": 0,
+    "file-name": "red_rose_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Tulip"
     },
-    "fileName": "red_tulip.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_tulip",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Tulip_plant"
+      "name-USen": "Red Tulip Plant"
     },
-    "fileName": "red_tulip_plant.png",
-    "price": 0,
+    "file-name": "red_tulip_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Red Windflower"
     },
-    "fileName": "red_windflower.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "red_windflower",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Red Windflower_plant"
+      "name-USen": "Red Windflower Plant"
     },
-    "fileName": "red_windflower_plant.png",
-    "price": 0,
+    "file-name": "red_windflower_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Round Mushroom"
     },
-    "fileName": "round_mushroom.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "round_mushroom",
+    "price": 200,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Sand Dollar"
     },
-    "fileName": "sand_dollar.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "sand_dollar",
+    "price": 120,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Sapling"
     },
-    "fileName": "sapling.png",
-    "price": 0,
+    "file-name": "sapling",
+    "price": 160,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Sea Snail"
     },
-    "fileName": "sea_snail.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "sea_snail",
+    "price": 180,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Skinny Mushroom"
     },
-    "fileName": "skinny_mushroom.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "skinny_mushroom",
+    "price": 300,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Snowflake"
     },
-    "fileName": "snowflake.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "snowflake",
+    "price": 200,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Soft Wood"
     },
-    "fileName": "soft_wood.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "soft_wood",
+    "price": 60,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Stone"
     },
-    "fileName": "stone.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "stone",
+    "price": 75,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Summer Shell"
     },
-    "fileName": "summer_shell.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "summer_shell",
+    "price": 600,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Tree"
     },
-    "fileName": "tree.png",
-    "price": 0,
+    "file-name": "tree",
+    "price": 240,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Tree Branch"
     },
-    "fileName": "tree_branch.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "tree_branch",
+    "price": 5,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Venus Comb"
     },
-    "fileName": "venus_comb.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "venus_comb",
+    "price": 300,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "Wasp Nest"
     },
-    "fileName": "wasp_nest.png",
-    "price": 0,
+    "file-name": "wasp_nest",
+    "price": 300,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Cosmos"
     },
-    "fileName": "white_cosmos.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_cosmos",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Cosmos_plant"
+      "name-USen": "White Cosmos Plant"
     },
-    "fileName": "white_cosmos_plant.png",
-    "price": 0,
+    "file-name": "white_cosmos_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Hyacinth"
     },
-    "fileName": "white_hyacinth.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_hyacinth",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Hyacinth_plant"
+      "name-USen": "White Hyacinth Plant"
     },
-    "fileName": "white_hyacinth_plant.png",
-    "price": 0,
+    "file-name": "white_hyacinth_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Lily"
     },
-    "fileName": "white_lily.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_lily",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Lily_plant"
+      "name-USen": "White Lily Plant"
     },
-    "fileName": "white_lily_plant.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_lily_plant",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
       "name-USen": "White Mum"
     },
-    "fileName": "white_mum.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_mum",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Mum_plant"
+      "name-USen": "White Mum Plant"
     },
-    "fileName": "white_mum_plant.png",
-    "price": 0,
+    "file-name": "white_mum_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Pansy"
     },
-    "fileName": "white_pansy.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_pansy",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Pansy_plant"
+      "name-USen": "White Pansy Plant"
     },
-    "fileName": "white_pansy_plant.png",
-    "price": 0,
+    "file-name": "white_pansy_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Rose"
     },
-    "fileName": "white_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_rose",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Rose_plant"
+      "name-USen": "White Rose Plant"
     },
-    "fileName": "white_rose_plant.png",
-    "price": 0,
+    "file-name": "white_rose_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Tulip"
     },
-    "fileName": "white_tulip.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_tulip",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Tulip_plant"
+      "name-USen": "White Tulip Plant"
     },
-    "fileName": "white_tulip_plant.png",
-    "price": 0,
+    "file-name": "white_tulip_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "White Windflower"
     },
-    "fileName": "white_windflower.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "white_windflower",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "White Windflower_plant"
+      "name-USen": "White Windflower Plant"
     },
-    "fileName": "white_windflower_plant.png",
-    "price": 0,
+    "file-name": "white_windflower_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Wood"
     },
-    "fileName": "wood.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "wood",
+    "price": 60,
+    "stackSize": 30
   },
   {
     "name": {
       "name-USen": "Yellow Cosmos"
     },
-    "fileName": "yellow_cosmos.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "yellow_cosmos",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Yellow Cosmos_plant"
+      "name-USen": "Yellow Cosmos Plant"
     },
-    "fileName": "yellow_cosmos_plant.png",
-    "price": 0,
+    "file-name": "yellow_cosmos_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Yellow Hyacinth"
     },
-    "fileName": "yellow_hyacinth.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "yellow_hyacinth",
+    "price": 80,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Yellow Hyacinth_plant"
+      "name-USen": "Yellow Hyacinth Plant"
     },
-    "fileName": "yellow_hyacinth_plant.png",
-    "price": 0,
+    "file-name": "yellow_hyacinth_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Yellow Lily"
     },
-    "fileName": "yellow_lily.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "yellow_lily",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Yellow Lily_plant"
+      "name-USen": "Yellow Lily Plant"
     },
-    "fileName": "yellow_lily_plant.png",
-    "price": 0,
+    "file-name": "yellow_lily_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Yellow Mum"
     },
-    "fileName": "yellow_mum.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "yellow_mum",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Yellow Mum_plant"
+      "name-USen": "Yellow Mum Plant"
     },
-    "fileName": "yellow_mum_plant.png",
-    "price": 0,
+    "file-name": "yellow_mum_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Yellow Pansy"
     },
-    "fileName": "yellow_pansy.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "yellow_pansy",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Yellow Pansy_plant"
+      "name-USen": "Yellow Pansy Plant"
     },
-    "fileName": "yellow_pansy_plant.png",
-    "price": 0,
+    "file-name": "yellow_pansy_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Yellow Rose"
     },
-    "fileName": "yellow_rose.png",
-    "price": 0,
-    "stackSize": 1
+    "file-name": "yellow_rose",
+    "price": 40,
+    "stackSize": 10
   },
   {
     "name": {
-      "name-USen": "Yellow Rose_plant"
+      "name-USen": "Yellow Rose Plant"
     },
-    "fileName": "yellow_rose_plant.png",
-    "price": 0,
+    "file-name": "yellow_rose_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
       "name-USen": "Yellow Tulip"
     },
-    "fileName": "yellow_tulip.png",
-    "price": 0,
+    "file-name": "yellow_tulip",
+    "price": 40,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Yellow Tulip Plant"
+    },
+    "file-name": "yellow_tulip_plant",
+    "price": 40,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Yellow Tulip_plant"
+      "name-USen": "Young Spring Bamboo"
     },
-    "fileName": "yellow_tulip_plant.png",
-    "price": 0,
+    "file-name": "young_spring_bamboo",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Virgo Star Fragment"
+    },
+    "file-name": "virgo",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Taurus Star Fragment"
+    },
+    "file-name": "taurus",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Scorpio Star Fragment"
+    },
+    "file-name": "scorpio",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Sagittarius Star Fragment"
+    },
+    "file-name": "sagittarius",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Large Star Fragment"
+    },
+    "file-name": "large_star_fragment",
+    "price": 2500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Pisces Star Fragment"
+    },
+    "file-name": "pisces",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Libra Star Fragment"
+    },
+    "file-name": "libra",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Leo Star Fragment"
+    },
+    "file-name": "leo",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Gemini Star Fragment"
+    },
+    "file-name": "gemini",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Capricorn Star Fragment"
+    },
+    "file-name": "capricorn",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Cancer Star Fragment"
+    },
+    "file-name": "cancer",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Aries Star Fragment"
+    },
+    "file-name": "aries",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Aquarius Star Fragment"
+    },
+    "file-name": "aquarius",
+    "price": 500,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Star Fragment"
+    },
+    "file-name": "star_fragment",
+    "price": 250,
+    "stackSize": 10
+  },
+  {
+    "name": {
+      "name-USen": "Sky Egg"
+    },
+    "file-name": "sky_egg",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Stone Egg"
+    },
+    "file-name": "stone_egg",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Leaf Egg"
+    },
+    "file-name": "leaf_egg",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Earth Egg"
+    },
+    "file-name": "earth_egg",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Wood Egg"
+    },
+    "file-name": "wood_egg",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Water Egg"
+    },
+    "file-name": "water_egg",
+    "price": 200,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Boot"
+    },
+    "file-name": "boot",
+    "price": 10,
     "stackSize": 1
   },
   {
     "name": {
-      "name-USen": "Young Spring_bamboo"
+      "name-USen": "Blue Ornament"
     },
-    "fileName": "young_spring_bamboo.png",
-    "price": 0,
+    "file-name": "blue_ornament",
+    "price": 50,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Can"
+    },
+    "file-name": "can",
+    "price": 10,
     "stackSize": 1
+  },
+  {
+    "name": {
+      "name-USen": "Red Ornament"
+    },
+    "file-name": "red_ornament",
+    "price": 50,
+    "stackSize": 30
+  },
+  {
+    "name": {
+      "name-USen": "Tire"
+    },
+    "file-name": "tire",
+    "price": 10,
+    "stackSize": 1
+  },
+  {
+    "name": {
+      "name-USen": "Yellow Ornament"
+    },
+    "file-name": "yellow_ornament",
+    "price": 50,
+    "stackSize": 30
   }
 ]

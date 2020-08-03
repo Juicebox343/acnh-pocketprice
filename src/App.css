@@ -102,7 +102,23 @@ table{
     width: 100%;
     border-radius: 7px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
+}
+
+.headline-details td:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+.headline-details td img{
+    margin-right: 1rem;
+    width: 64px;
+    height: auto;
+    border: 2px var(--stand-out) solid;
+    box-shadow: 0px 0px 5px var(--stand-out) inset;
+    border-radius: 5px;
+    background-color: #e0d7ac;
 }
 
 .headline-details td{
@@ -122,11 +138,12 @@ table{
 
 .creature-details{
     background-color: var(--list-background);
+    box-shadow: 0px 0px 2px var(--stand-out) inset;
     padding: .3rem;
     border-radius: 7px;
     width: 100%;
     opacity: 1;
-    margin-bottom: 0;
+    margin: 1rem 0 0 0;
     transition: .1s;
     font-size: 1rem;
     display: block;
@@ -342,11 +359,9 @@ main{
     width: 35px;
     height: 35px;
     font-size: 2.2rem;
-  
     border-radius: 10px;
     border: none;
     background-color: #3277b8; 
-    /* box-shadow: 2px 2px 0px #7c7c4b; */
     color: #fff;
 }
 
@@ -376,10 +391,10 @@ main{
 }
 
 .pocketIcons{
-    width: 50px;
+    width: 40px;
     position: relative;
-    bottom: 100%;
-    right: 100%;
+    bottom: 80%;
+    right: 60%;
 }
 
 .itemSlot{
@@ -447,4 +462,23 @@ main{
     box-shadow: 0px 0px 3px var(--main-emphasis-color) inset, 0px 0px 5px var(--main-emphasis-color) ;
     background-size: 95%;
     background-position: center;
+}
+
+.availability{
+    font-size: 1rem;
+}
+
+.item-count{
+    z-index: 100;
+    position: relative;
+    top: -180%;
+    right: -90%;
+    /* background-color: rgb(253, 238, 104); */
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
 }

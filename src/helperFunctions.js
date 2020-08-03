@@ -116,3 +116,10 @@ export function fixHour(numHour){
     return numHour
 }
     
+export function fancyHour(numHour){
+    if(numHour > 12){
+        return numHour - 11 + 'PM'
+    } 
+    return numHour = 'AM'
+}
+    

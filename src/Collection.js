@@ -1,5 +1,5 @@
 import React from 'react';
-import {monthCalc, capitalizeNames, timeFix} from './helperFunctions';
+import {monthCalc, capitalizeNames, timeFix, fancyHour} from './helperFunctions';
 
 class Collection extends React.Component{
  
@@ -16,7 +16,17 @@ class Collection extends React.Component{
   }
 
   handleAddToPocketBtn = (data) =>{
-    this.props.addToPocket(data.key, data.price, data.image, data.type)
+    this.props.addToPocket(data.key, data.type)
+  }
+
+  setTime = () => {
+    if(this.props['details']['availability']['isAllDay']){
+      return 'Available All Day '
+    } else {
+      let lastHour = this.props['details']['availability']['time-array'].slice(-1)
+      return 'Available until ' + fancyHour(lastHour)
+    }
+    
   }
 
     render(){
@@ -29,11 +39,13 @@ class Collection extends React.Component{
               
                   <tr className='headline-details'>
                     <td>
+                      <img src={`/icons/${this.props.type}/${details['file-name']}.png`} alt={details.item}/>
+
                       <h4>{capitalizeNames(details['name']['name-USen'])}</h4>
                     </td>
                     
                     <td>
-                      {this.props.details.hasOwnProperty(['availability']) && this.props['details']['availability']['time-array'].includes(this.props.timeHour) && <span>Available now</span>}
+                      {this.props.details.hasOwnProperty(['availability']) && this.props['details']['availability']['time-array'].includes(this.props.timeHour) && <span className='availability'>{this.setTime()}</span>}
                     </td>
 
                     <td>
@@ -41,16 +53,15 @@ class Collection extends React.Component{
                     </td>
                   </tr>
       
-                {this.state.detailExpand &&
+                {this.state.detailExpand && details.hasOwnProperty(['availability']) &&
                 <tr className='creature-details'>
                   <td>
-               
-                      {details['availability']['location'] !== 'N/A' && <p>Location: {details['availability']['location']}</p>}
-                      {details['shadow'] !== 'N/A' && <p>Shadow: {details['shadow']}</p>}
-                      <p>Time: {timeFix(details['availability']['time'])}</p>
-                      <p>N. Hemisphere: {monthCalc(details['availability']['month-northern'])}</p>
-                      <p>S. Hemisphere: {monthCalc(details['availability']['month-southern'])}</p>
-                      <p>Rarity: {details['availability']['rarity']}</p>
+                      {details.hasOwnProperty(['availability']['location']) && <p>Location: {details['availability']['location']}</p>}
+                      {details.hasOwnProperty(['shadow']) && <p>Shadow: {details['shadow'].split(' ')[0]}</p>}
+                      {details.hasOwnProperty(['availability']) && <p>Time: {timeFix(details['availability']['time'])}</p>}
+                      {details.hasOwnProperty(['availability']) && <p>N. Hemisphere: {monthCalc(details['availability']['month-northern'])}</p>}
+                      {details.hasOwnProperty(['availability']) && <p>S. Hemisphere: {monthCalc(details['availability']['month-southern'])}</p>}
+                      {details.hasOwnProperty(['availability']) && <p>Rarity: {details['availability']['rarity']}</p>}
                  
                   </td>
                 </tr>
@@ -59,7 +70,7 @@ class Collection extends React.Component{
             </button>
             </td>
             <td className='add-to-pocket-slot'>
-              <button className='addToPocket' onClick={() => this.handleAddToPocketBtn({key: this.props.index, price: details.price, image: details['file-name'], type: this.props.type})}>+</button>
+              <button className='addToPocket' onClick={() => this.handleAddToPocketBtn({key: this.props.index, type: this.props.type})}>+</button>
             </td>
           
         </tr>
