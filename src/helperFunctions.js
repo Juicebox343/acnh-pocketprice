@@ -6,59 +6,31 @@ export function timeFix(time){
 }
 
 export function monthCalc(range){
-    const newRange = range.split('-');
-    const wordMonth =[];
-    if(range === 'All Year'){
-        return
-    } else {
-        newRange.forEach(function(numMonth){
-            switch(numMonth) {
-                case '1':
-                    wordMonth.push('January')
-                break;
-                case '2':
-                    wordMonth.push('February')
-                break;
-                case '3':
-                    wordMonth.push('March')
-                break;
-                case '4':
-                    wordMonth.push('April')
-                break;
-                case '5':
-                    wordMonth.push('May')
-                break;
-                case '6':
-                    wordMonth.push('June')
-                break;
-                case '7':
-                    wordMonth.push('July')
-                break;
-                case '8':
-                    wordMonth.push('August')
-                break;
-                case '9':
-                    wordMonth.push('September')
-                break;
-                case '10':
-                    wordMonth.push('October')
-                break;
-                case '11':
-                    wordMonth.push('November')
-                break;
-                case '12':
-                    wordMonth.push('December')
-                break;
-                default:
-                    wordMonth.push('All Year')
-              } 
-        })
-        if(wordMonth[1]){
-            return `${wordMonth[0]} - ${wordMonth[1]}`;
-        } else {
-            return `${wordMonth[0]}`;
-        }
+    let dashSplit = [];
+    let andSplit = [];
+    let wordMonth = [];
+
+    if(range.includes('-')){
+        dashSplit = range.split('-');
     }
+   
+    if(range === ''){
+        return 'All Year'
+    } else {
+       return range
+.replace('12','December')
+.replace('11','November')
+.replace('10','October')                    
+.replace('9','September')
+.replace('8','August')
+.replace('7','July')
+.replace('6','June')
+.replace('5','May')
+.replace('4','April')
+.replace('3','March')
+.replace('2','February')
+.replace('1','January')
+ }
  
    
 }

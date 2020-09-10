@@ -61,18 +61,14 @@ class Collection extends React.Component{
                       {details.hasOwnProperty(['availability']) && <p>Time: {timeFix(details['availability']['time'])}</p>}
                       {details.hasOwnProperty(['availability']) && <p>N. Hemisphere: {monthCalc(details['availability']['month-northern'])}</p>}
                       {details.hasOwnProperty(['availability']) && <p>S. Hemisphere: {monthCalc(details['availability']['month-southern'])}</p>}
-                      {details.hasOwnProperty(['availability']) && <p>Rarity: {details['availability']['rarity']}</p>}
-                 
+                      {details.hasOwnProperty(['availability']['rarity']) && <p>Rarity: {details['availability']['rarity']}</p>}
+                      {details.hasOwnProperty(['speed']) && <p>Speed: {details['speed']}</p>}
                   </td>
                 </tr>
                 }
              
             </button>
             </td>
-            <td className='add-to-pocket-slot'>
-              <button className='addToPocket' onClick={() => this.handleAddToPocketBtn({key: this.props.index, type: this.props.type})}>+</button>
-            </td>
-          
         </tr>
           
           
