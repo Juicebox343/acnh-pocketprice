@@ -60,11 +60,18 @@ h4{
 
 table{
     margin: auto;
-    padding: 0.2rem 0.2rem;
     border-radius: 7px;
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 .5rem;
+}
+
+tbody{
+    width: 100%;
+}
+
+thead{
+    width: 100%;
 }
 
 .creature-row{
@@ -73,7 +80,6 @@ table{
 }
 
 .creature-data{
-    vertical-align: middle;
     box-shadow: 2px 3px 0 var(--stand-out);
     background-color: var(--list-foreground);
     color: #3f3f3f;
@@ -87,7 +93,6 @@ table{
 
 .creature-data td{
     width: 100%;
-    margin: .3rem;
 }
 
 
@@ -111,6 +116,7 @@ table{
 .headline-details td{
     display: flex;
     align-items: center;
+    font-size: 1rem;
 }
 
 .headline-details td img{
@@ -121,11 +127,13 @@ table{
     box-shadow: 0px 0px 5px var(--stand-out) inset;
     border-radius: 5px;
     background-color: #e0d7ac;
+    flex-shrink: 0;
 }
 
 
 .headline-details td:first-of-type{
     text-align: left;
+    min-width: 158.833px;
 }
 
 .headline-details td:last-of-type{
@@ -162,9 +170,8 @@ h3{
 .button-data{
     background-color: transparent;
     border: none;
-    font-size: 1rem;
     text-align: left;
-    padding: 0.5rem 0;
+  padding: 0;
     width: 100%;
 }
 
@@ -317,12 +324,6 @@ header span, header p{
     padding: 0;
 }
 
-
-main{
-    width: 100%;
-}
-
-
 .list-top{
     padding: 0 1rem;
     display: flex;
@@ -364,6 +365,7 @@ main{
 }
 
 .availability{
+    width: 100%;
     font-size: 1rem;
     display: block;
     text-align: center;
@@ -374,22 +376,36 @@ main{
 
 }
 
-.small{
-    display: none;
-}
-
-@media screen and (max-device-width: 800px) {
-    .small{
-        display: block;
-    }
-
-    .big{
-        display: none;
-    }
+@media screen and (max-device-width: 600px) {
 
     .cost{
         margin-left: .5rem;
-        
+
+    }
+    
+    main{
+        width: 100%;
+    }
+
+    .creature-data{
+        width: 100%;
+    }
+
+    .headline-details td img{
+        width: 48px;
+    }
+
+    .headline-details td {
+        font-size: 0.8rem;
+    }
+
+    .availability{
+        font-size: 0.8rem;
+    }
+
+    h4{
+        font-size: 0.8rem;
+        min-width: 44px;
     }
     
 }

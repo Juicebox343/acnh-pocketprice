@@ -21,10 +21,10 @@ class Collection extends React.Component{
 
   setTime = () => {
     if(this.props['details']['availability']['isAllDay']){
-      return 'All Day '
+      return 'all day '
     } else {
       let lastHour = this.props['details']['availability']['time-array'].slice(-1)
-      return 'Until ' + fancyHour(lastHour)
+      return 'until ' + fancyHour(lastHour)
     }
     
   }
@@ -46,30 +46,14 @@ class Collection extends React.Component{
                       </td>
                       
                       <td>
-                        {this.props.details.hasOwnProperty(['availability']) && this.props['details']['availability']['time-array'].includes(this.props.timeHour) && <span className='availability'> {this.setTime()}</span>}
+                        {this.props.details.hasOwnProperty(['availability']) && this.props['details']['availability']['time-array'].includes(this.props.timeHour) && <span className='availability'>Available {this.setTime()}</span>}
                       </td>
 
                       <td>
                         <span className='cost'>{details['price']} Bells</span> 
                       </td>
                     </tr>
-                </div>
-                
-                  
-                  <div className='small'>
-                  <tr className='headline-details'>
-                    <td>
-                      <img src={`/icons/${this.props.type}/${details['file-name']}.png`} alt={details.item}/>
-                      <h4>{capitalizeNames(details['name']['name-USen'])}</h4>
-                    </td>
-                    <td>
-                     
-                      {this.props.details.hasOwnProperty(['availability']) && this.props['details']['availability']['time-array'].includes(this.props.timeHour) && <span className='availability'>Available {this.setTime()}</span>}
-                      <span className='cost'>{details['price']} Bells</span> 
-                    </td>
-                  </tr>
-                  </div>
-                  
+                </div>                
       
                 {this.state.detailExpand && details.hasOwnProperty(['availability']) &&
                 <tr className='creature-details'>
