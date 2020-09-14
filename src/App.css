@@ -85,8 +85,9 @@ table{
     margin: 0.5rem 0;
 }
 
-.creature-data td:first-of-type{
+.creature-data td{
     width: 100%;
+    margin: .3rem;
 }
 
 
@@ -103,10 +104,11 @@ table{
     border-radius: 7px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
 
-.headline-details td:first-of-type{
+.headline-details td{
     display: flex;
     align-items: center;
 }
@@ -121,19 +123,17 @@ table{
     background-color: #e0d7ac;
 }
 
-.headline-details td{
-    width: 33.3333%;
-    text-align: center;
-}
 
 .headline-details td:first-of-type{
-    width: 33.3333%;
     text-align: left;
 }
 
 .headline-details td:last-of-type{
     text-align: right;
-    width: 33.3333%;
+}
+
+.cost{
+    width: 100%;
 }
 
 .creature-details{
@@ -164,7 +164,7 @@ h3{
     border: none;
     font-size: 1rem;
     text-align: left;
-    padding: 1rem;
+    padding: 0.5rem 0;
     width: 100%;
 }
 
@@ -365,4 +365,31 @@ main{
 
 .availability{
     font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.small{
+    display: none;
+
+}
+
+.small{
+    display: none;
+}
+
+@media screen and (max-device-width: 800px) {
+    .small{
+        display: block;
+    }
+
+    .big{
+        display: none;
+    }
+
+    .cost{
+        margin-left: .5rem;
+        
+    }
+    
 }
