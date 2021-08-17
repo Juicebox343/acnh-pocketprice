@@ -40,7 +40,8 @@ header{
 }
 
 .container{
-
+    max-width: 650px;
+    margin: auto;
 }
 
 h2{
@@ -188,7 +189,6 @@ h3{
     border: none;
     background-color: var(--list-background);
     color: #3f3f3f;
-    margin-right: .4rem;
     height: 50px;
     min-width: 30%;
     flex-grow: 2;
